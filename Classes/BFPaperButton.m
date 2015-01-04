@@ -121,44 +121,6 @@ static CGFloat const bfPaperButton_clearBGFadeConstant             = 0.12f;
     return self;
 }
 
-#pragma mark Deprecated Initializers
-- (instancetype)initRaised
-{
-    self = [super init];
-    if (self) {
-        [self setupRaised:YES];
-    }
-    return self;
-}
-
-- (instancetype)initRaisedWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        [self setupRaised:YES];
-    }
-    return self;
-}
-
-- (instancetype)initFlat
-{
-    self = [super init];
-    if (self) {
-        [self setupRaised:NO];
-    }
-    return self;
-}
-
-- (instancetype)initFlatWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        [self setupRaised:NO];
-    }
-    return self;
-}
-
-
 #pragma mark - Parent Overrides
 - (void)setEnabled:(BOOL)enabled
 {

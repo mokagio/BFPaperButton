@@ -112,34 +112,4 @@ extern CGFloat const bfPaperButton_tapCircleDiameterDefault;
  */
 - (instancetype)initWithFrame:(CGRect)frame raised:(BOOL)raised;
 
-
-#pragma mark - Deprecated Initializers
-/**
- *  Initializes a Raised BFPaperButton, obviously without a frame.
- *
- *  @return A Raised BFPaperButton!
- */
-- (instancetype)initRaised __attribute__((deprecated("Please use -(instancetype)initWithRaised:(BOOL)raised")));
-
-/**
- *  Initializes a Raised BFPaperButton and assigns it a frame.
- *
- *  @return A Raised BFPaperButton with a frame!
- */
-- (instancetype)initRaisedWithFrame:(CGRect)frame __attribute__((deprecated("Please use - (instancetype)initWithFrame:(CGRect)frame raised:(BOOL)raised")));
-
-/**
- *  Initializes a Flat BFPaperButton, obviously without a frame.
- *
- *  @return A Flat BFPaperButton!
- */
-- (instancetype)initFlat __attribute__((deprecated("Please use -(instancetype)initWithRaised:(BOOL)raised")));
-
-/**
- *  Initializes a Flat BFPaperButton and assigns it a frame.
- *
- *  @return A Flat BFPaperButton with a frame!
- */
-- (instancetype)initFlatWithFrame:(CGRect)frame __attribute__((deprecated("Please use - (instancetype)initWithFrame:(CGRect)frame raised:(BOOL)raised")));
-
 @end
